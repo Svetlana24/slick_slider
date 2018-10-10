@@ -1,0 +1,424 @@
+$color: rgba(211,163,111,0.9)
+
+@font-face 
+    font-family: "PTS-R"
+    src: url("fonts/PTSans/PTS-R.ttf") format("truetype")
+    font-style: normal
+    font-weight: normal
+@font-face 
+    font-family: "PTS-B"
+    src: url("fonts/PTSans/PTS-B.ttf") format("truetype")
+    font-style: normal
+    font-weight: normal
+
+body 
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 40px
+    font-weight: normal
+    position: relative
+    line-height: 18px
+    overflow-x: hidden
+    font-family: "PTS-R"
+    z-index: 1
+    @media only screen and (max-width : 1024px)
+    	padding: 0
+
+
+
+
+h1,
+h2
+h3,
+h4,
+h5,
+h6, 
+body,
+p,
+ul
+	margin: 0
+
+a
+	text-decoration: none
+
+
+a:hover
+	text-decoration: none
+
+header
+	margin: 30px 0 0
+	padding: 0 50px
+	@media only screen and (max-width : 1024px)
+		padding: 0 30px
+	@media only screen and (max-width : 732px)
+		padding: 0
+		margin: 0
+
+.header__top-info,
+.menu,
+.menu__nav,
+.menu__icons,
+	display: flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	-moz-justify-content: space-between
+
+.header__top-info,
+.menu,
+.menu__nav,
+.menu__icons
+	padding: 0
+	list-style-type: none
+
+.header__logo
+	@media only screen and (max-width : 1024px)
+		width: 180px
+	
+
+.header__logo-text
+	margin-top: 10px
+	font-size: 14px
+	color: #a0a1ad
+
+.header__search
+	width: 36%
+	@media only screen and (max-width : 1330px)
+		width: 30%
+	@media only screen and (max-width : 1160px)
+		width: 220px
+
+.header__input-search
+	margin-left: 40px
+	padding-left: 10px
+	width: 100%
+	height: 35px
+	background-image: url('img/search.png')
+	background-position: 98% 50%
+	background-repeat: no-repeat
+	border: 1px solid #b9b8bd
+	border-radius: 5px
+	@media only screen and (max-width : 1160px)
+		margin-left: 20px
+	@media only screen and (max-width : 1030px)
+		margin-left: 10px
+
+.header__contacts
+	margin: 0 15px 0 90px
+	font-size: 23px
+	color: #181616
+	@media only screen and (max-width : 1330px)
+		margin: 5px 15px 0 60px
+	@media only screen and (max-width : 1160px)
+		font-size: 18px
+		margin-left: 40px
+	@media only screen and (max-width : 1030px)
+		font-size: 16px
+	@media only screen and (max-width : 810px)
+		margin: 5px 10px 0 30px
+	@media only screen and (max-width : 765px)
+		font-size: 12px
+
+
+
+.header__schedule
+	font-size: 14px
+	color: #cb944c
+	@media only screen and (max-width : 810px)
+		font-size: 10px 
+
+.header__schedule 
+	span
+		margin-top: 7px
+		color: #2b3056
+ 
+.menu
+	@media only screen and (max-width : 1330px)
+		flex-wrap: wrap-reverse
+		justify-content: flex-end
+		-webkit-justify-content: flex-end
+		-moz-justify-content: flex-end
+
+.menu__submenu
+	top: 30px
+	left: -185px
+	@media only screen and (max-width : 1230px)
+		left: -155px
+	@media only screen and (max-width : 1070px)
+		left: -135px
+	@media only screen and (max-width : 1030px)
+		left: -100px
+	@media only screen and (max-width : 935px)
+		left: -80px
+	@media only screen and (max-width : 850px)
+		left: -60px
+
+
+.menu__subsubmenu
+	bottom: 0
+	left: 250px
+
+	ul
+		padding: 0
+		list-style-type: circle
+	h3
+		padding: 7px 15px 13px
+
+
+.menu__submenu,
+.menu__subsubmenu
+	display: none
+	padding: 25px 0
+	width: 245px
+	position: absolute
+	font-size: 15px
+	color: #cf9c5d
+	background-color: #fff
+	-webkit-border-radius: 3px
+	-moz-border-radius: 3px
+	-o-border-radius: 3px
+	border-radius: 3px
+	z-index: 999
+
+	li
+		padding: 7px 15px
+		width: 100%
+		text-transform: none
+		font-family: 'PTS-R'
+		list-style-position: inside
+		box-sizing: border-box
+		&:hover
+			background-color: #e9e9ea
+	span
+		color: #666666
+		p
+			padding-left: 20px
+
+.menu__arrow
+	float: right
+	margin-top: 5px
+
+.menu__select
+	position: relative
+	img
+		margin-left: 10px
+	&:hover
+		cursor: pointer
+		.menu__submenu
+			display: block
+
+.menu__menu-subsubmenu:hover
+	.menu__subsubmenu
+		display: block
+
+
+
+.menu__nav,
+.menu__icons
+	margin-top: 30px
+	font-size: 16px
+	font-family: 'PTS-B'
+	text-transform: uppercase
+	@media only screen and (max-width : 998px)
+		font-size: 14px
+	@media only screen and (max-width : 750px)
+		font-size: 12px
+	a
+		color: #171717
+
+.menu__nav 
+	li
+		&:not(:last-child)
+			margin-right: 25px
+			@media only screen and (max-width : 1330px)
+				margin-right: 45px
+			@media only screen and (max-width : 1180px)
+				margin-right: 25px
+			@media only screen and (max-width : 1060px)
+				margin-right: 15px
+			@media only screen and (max-width : 780px)
+				margin-right: 10px
+
+		&:nth-child(2)
+			margin-right: 10px
+	@media only screen and (max-width : 1330px)
+		width: 100%
+
+.menu__icons
+	color: #252a54 
+	a
+		color: #252a54
+.menu__circle
+	margin: 0 10px 0 
+	padding: 2px
+	width: 22px
+	height: 19px
+	display: inline-block
+	-webkit-border-radius: 50%
+	-moz-border-radius: 50%
+	-o-border-radius: 50%
+	border-radius: 50%
+	text-align: center
+	background-color: #cb944c
+	color: #fff
+
+.menu__amount 
+	font-size: 14px
+	p
+		padding-top: 3px
+		display: inline-block
+		
+.menu__user
+	margin: 0 7px 0 20px
+.gallary 
+	margin: 50px 0 0
+	@media only screen and (max-width : 732px)
+		margin-top: 20px
+
+.slider__item
+	height: 330px
+	background-image: url("img/slider.jpg")
+	background-repeat: no-repeat
+	background-position: bottom
+	background-size: cover
+	@media only screen and (max-width : 600px)
+		height: 250px
+	@media only screen and (max-width : 500px)
+		height: 200px
+	@media only screen and (max-width : 420px)
+		height: 150px
+
+.slick-prev,
+.slick-next
+	width: 36px
+	height: 130px
+	background-color: $color
+	z-index: 100
+	@media only screen and (max-width : 768px)
+		height: 70px
+		width: 20px
+	@media only screen and (max-width : 375px)
+		height: 30px
+
+.slick-prev
+	left: 0
+	&:before
+		content: url('img/left_arr.png')
+		@media only screen and (max-width : 768px)
+			content: url('img/arrow_left_small.png')
+	&:hover
+		background-color: rgba(255,255,255,0.7)
+		&:before
+			content: url('img/left_arrow.png')
+			@media only screen and (max-width : 768px)
+				content: url('img/arr_left_small.png')
+
+
+.slick-next
+	right: 0
+	&:before 
+		content: url('img/right_arr.png')
+		@media only screen and (max-width : 768px)
+			content: url('img/arrow_right_small.png')
+	&:hover
+		background-color: rgba(255,255,255,0.7)
+		&:before
+			content: url('img/right_arrow.png')
+			@media only screen and (max-width : 768px)
+				content: url('img/arr_right_small.png')
+
+.slick-dots
+	bottom: -45px
+	li
+		button 
+			width: 20px
+			height: 20px
+			-webkit-border-radius: 50%
+			-moz-border-radius: 50%
+			-o-border-radius: 50%
+			border-radius: 50%
+			background-color: #cb944c
+			filter: alpha(opacity=25)
+			-moz-opacity: .25
+			opacity: .25
+			&:before
+				content: normal
+	.slick-active 
+		button
+			filter: alpha(opacity=100)
+			-moz-opacity: 1
+			opacity: 1
+
+
+.block
+	position: absolute
+	padding: 15px 0 0 30px 
+	bottom: 100px
+	left: 110px
+	width: 500px
+	height: 130px
+	background-color: $color
+	font-size: 42px
+	line-height: 47px
+	box-sizing: border-box
+	color: #fff
+	@media only screen and (max-width : 768px)
+		bottom: 130px
+		padding-top: 10px
+		left: 70px
+		width: 250px
+		line-height: normal
+		height: 70px
+		font-size: 20px	
+	@media only screen and (max-width : 600px)
+		bottom: 90px
+	@media only screen and (max-width : 500px)
+		bottom: 65px
+	@media only screen and (max-width : 420px)
+		bottom: 40px
+		left: 50px
+	@media only screen and (max-width : 375px)
+		padding-top: 5px
+		bottom: 50px
+		width: 190px
+		height: 50px
+		font-size: 14px
+
+.header-mob__menu
+	display: none
+	@media only screen and (max-width : 732px)
+		padding: 0
+		margin-bottom: 20px
+		display: flex
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		justify-content: space-between
+		-webkit-justify-content: space-between
+		-moz-justify-content: space-between
+		list-style-type: none
+		background-color: #f0f1f6
+		li
+			padding: 10px 0
+			width: 17%
+			text-align: center
+			&:first-child
+				img
+					width: 20%
+	
+			&:hover
+				background-color: #3eade2
+
+.menu
+	@media only screen and (max-width : 732px)
+		display: none
+
+.header
+	@media only screen and (max-width : 732px)
+		li
+			&:not(:first-child)
+				display: none
+			&:first-child
+				margin-left: 20px
